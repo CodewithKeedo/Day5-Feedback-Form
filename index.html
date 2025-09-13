@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form with Star Rating</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="feedback-container">
+        <h2>Rate Your Experience</h2>
+
+        <!-- Star rating row -->
+        <div class="stars">
+            <span data-value="1" class="star">★</span>
+            <span data-value="2" class="star">★</span>
+            <span data-value="3" class="star">★</span>
+            <span data-value="4" class="star">★</span>
+            <span data-value="5" class="star">★</span>
+        </div>
+        <div id="ratingError" class="error"></div>
+
+        <!-- Feedback textarea -->
+        <textarea id="textArea" rows="4" placeholder="Write your feedback here."></textarea>
+        <div id="feedbackError" class="error"></div>
+
+        <!-- Submit button -->
+        <button id="submitBtn">Submit Feedback</button>
+
+        <!-- Success message -->
+        <div id="thanksMessage" class="thanks-message"></div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
